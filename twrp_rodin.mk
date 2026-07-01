@@ -27,7 +27,7 @@ HBM_SUPPORTED := true
 TARGET_OPTIMIZED_DEXOPT := true
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/twrp/config/common_full_phone.mk)
+#$(call inherit-product, vendor/twrp/config/common_full_phone.mk)
 
 # Inherit from rodin device
 $(call inherit-product, device/xiaomi/rodin/device.mk)
