@@ -119,9 +119,9 @@ PRODUCT_PACKAGES += \
     libvolumesw \
     libextensioneffect
 
-PRODUCT_PACKAGES += \
-    MtkInCallService \
-    LunarisDolby
+#PRODUCT_PACKAGES += \
+#    MtkInCallService \
+#    LunarisDolby
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_config.xml \
@@ -161,8 +161,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
 
 # Camera
-PRODUCT_PACKAGES += \
-    LineageApertureOverlayRodin
+#PRODUCT_PACKAGES += \
+#    LineageApertureOverlayRodin
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -259,12 +259,12 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 $(call soong_config_set_bool,lineagelight,scan_for_backlight_devices,$(TARGET_LIGHT_HAL_SCAN_FOR_BACKLIGHT_DEVICES))
-PRODUCT_PACKAGES += \
-    android.hardware.light-service.lineage
+#PRODUCT_PACKAGES += \
+#    android.hardware.light-service.lineage
 
 # Media
-PRODUCT_PACKAGES += \
-    android.hardware.media.c2-mtk-service
+#PRODUCT_PACKAGES += \
+#    android.hardware.media.c2-mtk-service
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
