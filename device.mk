@@ -16,7 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Inherit common MediaTek IMS
-$(call inherit-product, vendor/mediatek/ims/ims.mk)
+#$(call inherit-product, vendor/mediatek/ims/ims.mk)
 
 # Rootdir
 PRODUCT_PACKAGES += \
