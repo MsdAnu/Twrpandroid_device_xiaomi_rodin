@@ -27,13 +27,13 @@ HBM_SUPPORTED := true
 TARGET_OPTIMIZED_DEXOPT := true
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
+$(call inherit-product, vendor/twrp/config/common_full_phone.mk)
 
 # Inherit from rodin device
 $(call inherit-product, device/xiaomi/rodin/device.mk)
 
 PRODUCT_DEVICE := rodin
-PRODUCT_NAME := matrixx_rodin
+PRODUCT_NAME := twrp_rodin
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 2412DPC0AG
 PRODUCT_MANUFACTURER := xiaomi
